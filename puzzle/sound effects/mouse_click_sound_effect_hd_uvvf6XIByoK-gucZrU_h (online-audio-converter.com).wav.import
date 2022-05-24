@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mouse_click_sound_effect_hd_uvvf6XIByoK-gucZrU_h (online-audio-converter.com).wav-28c2b24037f55815c9413210c815a781.sample"
+
+[deps]
+
+source_file="res://sound effects/mouse_click_sound_effect_hd_uvvf6XIByoK-gucZrU_h (online-audio-converter.com).wav"
+dest_files=[ "res://.import/mouse_click_sound_effect_hd_uvvf6XIByoK-gucZrU_h (online-audio-converter.com).wav-28c2b24037f55815c9413210c815a781.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

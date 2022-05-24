@@ -1,0 +1,156 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://fonte/Monday Monkey.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://sprites/leao/le.png" type="Texture" id=2]
+[ext_resource path="res://sprites/elefante/ele.png" type="Texture" id=3]
+[ext_resource path="res://sprites/flo.jpg" type="Texture" id=4]
+[ext_resource path="res://cenas/titleScreen.gd" type="Script" id=5]
+[ext_resource path="res://soundtrack/can_anybody_tell_me_the_name_for_this_song_3170858729456651404 (online-audio-converter.com).wav" type="AudioStream" id=6]
+[ext_resource path="res://sound effects/mouse_click_sound_effect_hd_uvvf6XIByoK-gucZrU_h (online-audio-converter.com).wav" type="AudioStream" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 75
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 70
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 90
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 70
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 90
+font_data = ExtResource( 1 )
+
+[node name="titleScreen" type="Control"]
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="painel-de-festa-floresta-3-painel-em-tecido" type="Sprite" parent="."]
+position = Vector2( 513.425, 301.99 )
+scale = Vector2( 1.60484, 1.2587 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 243.264
+margin_top = 80.0
+margin_right = 776.264
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+text = "Quebra-Cabeça animal"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="le" type="Sprite" parent="."]
+position = Vector2( 163.41, 437.471 )
+rotation = -3.14159
+scale = Vector2( 0.474868, -0.441493 )
+texture = ExtResource( 2 )
+
+[node name="ele" type="Sprite" parent="."]
+position = Vector2( 846.658, 431.178 )
+scale = Vector2( 0.608374, 0.629723 )
+texture = ExtResource( 3 )
+
+[node name="menu" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 120.0
+margin_top = 80.0
+margin_right = 880.0
+margin_bottom = 640.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="menu"]
+margin_right = 760.0
+margin_bottom = 14.0
+
+[node name="centerRow" type="HBoxContainer" parent="menu"]
+margin_top = 18.0
+margin_right = 760.0
+margin_bottom = 560.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="botoes" type="VBoxContainer" parent="menu/centerRow"]
+margin_right = 760.0
+margin_bottom = 542.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="iniciar" type="Button" parent="menu/centerRow/botoes"]
+margin_top = 192.0
+margin_right = 760.0
+margin_bottom = 269.0
+custom_fonts/font = SubResource( 2 )
+flat = true
+
+[node name="Label" type="Label" parent="menu/centerRow/botoes/iniciar"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -64.5
+margin_top = -35.5
+margin_right = 64.5
+margin_bottom = 35.5
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+text = "Iniciar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sair" type="Button" parent="menu/centerRow/botoes"]
+margin_top = 273.0
+margin_right = 760.0
+margin_bottom = 350.0
+custom_fonts/font = SubResource( 4 )
+flat = true
+
+[node name="Label" type="Label" parent="menu/centerRow/botoes/sair"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -64.5
+margin_top = -35.5
+margin_right = 64.5
+margin_bottom = 35.5
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+text = " Sair"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -20.0
+
+[node name="click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+[connection signal="pressed" from="menu/centerRow/botoes/iniciar" to="." method="_on_iniciar_pressed"]
+[connection signal="pressed" from="menu/centerRow/botoes/sair" to="." method="_on_sair_pressed"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/happy_kids_sound_effect_4623491656417256917 (online-audio-converter.com).wav-8ef12d0c376c91034b1a1fe8257cec90.sample"
+
+[deps]
+
+source_file="res://sound effects/happy_kids_sound_effect_4623491656417256917 (online-audio-converter.com).wav"
+dest_files=[ "res://.import/happy_kids_sound_effect_4623491656417256917 (online-audio-converter.com).wav-8ef12d0c376c91034b1a1fe8257cec90.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/can_anybody_tell_me_the_name_for_this_song_3170858729456651404 (online-audio-converter.com).wav-a3e42d43a6a4d749c46b3fc9c2ac580e.sample"
+
+[deps]
+
+source_file="res://soundtrack/can_anybody_tell_me_the_name_for_this_song_3170858729456651404 (online-audio-converter.com).wav"
+dest_files=[ "res://.import/can_anybody_tell_me_the_name_for_this_song_3170858729456651404 (online-audio-converter.com).wav-a3e42d43a6a4d749c46b3fc9c2ac580e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lion_roar_sound_effect_2398355254962964740 (online-audio-converter.com).wav-d9283d402e112cb1874b595c97f1eb72.sample"
+
+[deps]
+
+source_file="res://sound effects/lion_roar_sound_effect_2398355254962964740 (online-audio-converter.com).wav"
+dest_files=[ "res://.import/lion_roar_sound_effect_2398355254962964740 (online-audio-converter.com).wav-d9283d402e112cb1874b595c97f1eb72.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

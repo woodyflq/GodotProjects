@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pokemon_firered_leafgreen_route_1_-3417508122376783429 (online-audio-converter.com).wav-5cde31db40587b99057aedd296f33028.sample"
+
+[deps]
+
+source_file="res://soundtrack/pokemon_firered_leafgreen_route_1_-3417508122376783429 (online-audio-converter.com).wav"
+dest_files=[ "res://.import/pokemon_firered_leafgreen_route_1_-3417508122376783429 (online-audio-converter.com).wav-5cde31db40587b99057aedd296f33028.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

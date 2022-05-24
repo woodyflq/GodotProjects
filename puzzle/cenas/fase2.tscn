@@ -1,0 +1,322 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://soundtrack/accumula_town_pokemon_black_white_-3194181687532314191 (online-audio-converter.com).wav" type="AudioStream" id=1]
+[ext_resource path="res://cenas/elefante.gd" type="Script" id=2]
+[ext_resource path="res://sprites/leao/leao1.png" type="Texture" id=3]
+[ext_resource path="res://sprites/pais.jpg" type="Texture" id=4]
+[ext_resource path="res://sprites/leao/leao2.png" type="Texture" id=5]
+[ext_resource path="res://sprites/leao/leao4.png" type="Texture" id=6]
+[ext_resource path="res://sprites/leao/leao3.png" type="Texture" id=7]
+[ext_resource path="res://cenas/fase2.gd" type="Script" id=8]
+[ext_resource path="res://sprites/azul.png" type="Texture" id=9]
+[ext_resource path="res://fonte/Monday Monkey.otf" type="DynamicFontData" id=10]
+[ext_resource path="res://sound effects/happy_kids_sound_effect_4623491656417256917 (online-audio-converter.com).wav" type="AudioStream" id=11]
+[ext_resource path="res://sound effects/mouse_click_sound_effect_hd_uvvf6XIByoK-gucZrU_h (online-audio-converter.com).wav" type="AudioStream" id=12]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Area2D
+var dragMouse = false
+
+func _process(delta):
+	if(dragMouse):
+		set_position(get_viewport().get_mouse_position())
+
+
+
+
+func _on_Area2D_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton:
+		if event.is_pressed():
+			dragMouse = true
+		else:
+			dragMouse = false
+"
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 313, 313 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 30, 30 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 313, 313 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 30, 30 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+[sub_resource type="GDScript" id=8]
+script/source = "extends Area2D
+var dragMouse = false
+
+func _process(delta):
+	if(dragMouse):
+		set_position(get_viewport().get_mouse_position())
+
+
+
+
+func _on_Area2D_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton:
+		if event.is_pressed():
+			dragMouse = true
+		else:
+			dragMouse = false
+"
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 313, 313 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 30, 30 )
+
+[sub_resource type="RectangleShape2D" id=11]
+
+[sub_resource type="GDScript" id=12]
+script/source = "extends Area2D
+var dragMouse = false
+
+func _process(delta):
+	if(dragMouse):
+		set_position(get_viewport().get_mouse_position())
+
+
+
+
+func _on_Area2D_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton:
+		if event.is_pressed():
+			dragMouse = true
+		else:
+			dragMouse = false
+"
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 313, 313 )
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 30, 30 )
+
+[sub_resource type="RectangleShape2D" id=15]
+
+[sub_resource type="DynamicFont" id=16]
+size = 75
+font_data = ExtResource( 10 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="paisagem" type="Sprite" parent="."]
+position = Vector2( 511.915, 301.909 )
+scale = Vector2( 1.64436, 1.70621 )
+texture = ExtResource( 4 )
+
+[node name="fundo2" type="Sprite" parent="."]
+position = Vector2( 514, 293 )
+scale = Vector2( 0.716, 0.953 )
+texture = ExtResource( 9 )
+
+[node name="LeaoEsqCima" type="Area2D" parent="."]
+position = Vector2( 877.3, 113.698 )
+scale = Vector2( 0.3, 0.3 )
+script = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeaoEsqCima"]
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="LeaoEsqCima"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
+
+[node name="Area2D" type="Area2D" parent="LeaoEsqCima" groups=[
+"LeaoEsqCima",
+]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeaoEsqCima/Area2D"]
+shape = SubResource( 3 )
+
+[node name="ConfirmEsqCima" type="Area2D" parent="." groups=[
+"ConfirmEsqCima",
+]]
+position = Vector2( 420, 199 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ConfirmEsqCima"]
+shape = SubResource( 4 )
+
+[node name="LeaoDirCima" type="Area2D" parent="."]
+position = Vector2( 190.759, 453.441 )
+scale = Vector2( 0.3, 0.3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeaoDirCima"]
+shape = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="LeaoDirCima"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="LeaoDirCima" groups=[
+"LeaoDirCima",
+]]
+position = Vector2( 0, -6.10352e-05 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeaoDirCima/Area2D"]
+shape = SubResource( 6 )
+
+[node name="ConfirmDirCima" type="Area2D" parent="." groups=[
+"ConfirmDirCima",
+]]
+position = Vector2( 608, 199 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ConfirmDirCima"]
+shape = SubResource( 7 )
+
+[node name="LeaoDirBaixo" type="Area2D" parent="."]
+position = Vector2( 872.862, 416.989 )
+scale = Vector2( 0.3, 0.3 )
+script = SubResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeaoDirBaixo"]
+shape = SubResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="LeaoDirBaixo"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="Area2D" type="Area2D" parent="LeaoDirBaixo" groups=[
+"LeaoDirBaixo",
+]]
+position = Vector2( 0, 0.00012207 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeaoDirBaixo/Area2D"]
+shape = SubResource( 10 )
+
+[node name="ConfirmDirBaixo" type="Area2D" parent="." groups=[
+"ConfirmDirBaixo",
+]]
+position = Vector2( 608, 387 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ConfirmDirBaixo"]
+shape = SubResource( 11 )
+
+[node name="LeaoEsqBaixo" type="Area2D" parent="."]
+position = Vector2( 164.569, 182.405 )
+scale = Vector2( 0.3, 0.3 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeaoEsqBaixo"]
+shape = SubResource( 13 )
+
+[node name="Sprite" type="Sprite" parent="LeaoEsqBaixo"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+
+[node name="Area2D" type="Area2D" parent="LeaoEsqBaixo" groups=[
+"LeaoEsqBaixo",
+]]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeaoEsqBaixo/Area2D"]
+shape = SubResource( 14 )
+
+[node name="ConfirmEsqBaixo" type="Area2D" parent="." groups=[
+"ConfirmEsqBaixo",
+]]
+position = Vector2( 420, 387 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ConfirmEsqBaixo"]
+shape = SubResource( 15 )
+
+[node name="kidsYeah" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -20.0
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -25.0
+
+[node name="level" type="Label" parent="."]
+margin_left = 376.621
+margin_top = 21.7295
+margin_right = 652.621
+margin_bottom = 97.7295
+custom_fonts/font = SubResource( 16 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+text = "Segunda fase"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pergunta" type="Label" parent="."]
+margin_left = 305.269
+margin_top = 505.737
+margin_right = 739.269
+margin_bottom = 581.737
+custom_fonts/font = SubResource( 16 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+text = "Que animal é esse ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 164.569, 153.777 )
+
+[node name="Position2D2" type="Position2D" parent="."]
+position = Vector2( 892.357, 153.777 )
+
+[node name="Position2D3" type="Position2D" parent="."]
+position = Vector2( 892.357, 453.441 )
+
+[node name="Position2D4" type="Position2D" parent="."]
+position = Vector2( 164.569, 453.441 )
+
+[node name="click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+[connection signal="input_event" from="LeaoEsqCima" to="LeaoEsqCima" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="ConfirmEsqCima" to="." method="_on_ConfirmEsqCima_area_entered"]
+[connection signal="input_event" from="LeaoDirCima" to="LeaoDirCima" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="ConfirmDirCima" to="." method="_on_ConfirmDirCima_area_entered"]
+[connection signal="input_event" from="LeaoDirBaixo" to="LeaoDirBaixo" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="ConfirmDirBaixo" to="." method="_on_ConfirmDirBaixo_area_entered"]
+[connection signal="input_event" from="LeaoEsqBaixo" to="LeaoEsqBaixo" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="ConfirmEsqBaixo" to="." method="_on_ConfirmEsqBaixo_area_entered"]

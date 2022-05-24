@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/[ontiva.com] Through The Fire and Flames [8 Bit Cover Tribute to Dragonforce] - 8 Bit Universe-320k.wav-f068a63e5b5a6aa2ea9e52e188371ce7.sample"
+
+[deps]
+
+source_file="res://assets/sounds/[ontiva.com] Through The Fire and Flames [8 Bit Cover Tribute to Dragonforce] - 8 Bit Universe-320k.wav"
+dest_files=[ "res://.import/[ontiva.com] Through The Fire and Flames [8 Bit Cover Tribute to Dragonforce] - 8 Bit Universe-320k.wav-f068a63e5b5a6aa2ea9e52e188371ce7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

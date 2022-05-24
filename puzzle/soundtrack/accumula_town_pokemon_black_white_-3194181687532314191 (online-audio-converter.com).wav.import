@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/accumula_town_pokemon_black_white_-3194181687532314191 (online-audio-converter.com).wav-dacda3d38fb8b12b1bba5ea38b09b17a.sample"
+
+[deps]
+
+source_file="res://soundtrack/accumula_town_pokemon_black_white_-3194181687532314191 (online-audio-converter.com).wav"
+dest_files=[ "res://.import/accumula_town_pokemon_black_white_-3194181687532314191 (online-audio-converter.com).wav-dacda3d38fb8b12b1bba5ea38b09b17a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
